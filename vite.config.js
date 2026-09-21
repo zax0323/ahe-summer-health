@@ -2,8 +2,13 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? './' : '/',
+export default defineConfig(({ command, mode }) => ({
+  base:
+    mode === 'github-pages'
+      ? '/ahe-summer-health/'
+      : command === 'build'
+        ? './'
+        : '/',
   plugins: [vue()],
   resolve: {
     alias: {
