@@ -2,18 +2,18 @@
 import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-import character from '@/assets/physical-exam-character.png'
-import back from '@/assets/physical-exam-back.png'
-import magnifier from '@/assets/physical-exam-magnifier-cropped.png'
-import organ1 from '@/assets/physical-exam-organ-1.png'
-import organ2 from '@/assets/physical-exam-organ-2.png'
-import organ3 from '@/assets/physical-exam-organ-3.png'
-import organ4 from '@/assets/physical-exam-organ-4.png'
-import organ5 from '@/assets/physical-exam-organ-5.png'
-import organs from '@/assets/physical-exam-organs.png'
-import title from '@/assets/physical-exam-title.png'
-import tipBubble from '@/assets/physical-exam-tip-bubble.png'
-import warning from '@/assets/physical-exam-warning.png'
+import character from '@/assets/physical-exam-character.webp'
+import back from '@/assets/physical-exam-back.webp'
+import magnifier from '@/assets/physical-exam-magnifier-cropped.webp'
+import organ1 from '@/assets/physical-exam-organ-1.webp'
+import organ2 from '@/assets/physical-exam-organ-2.webp'
+import organ3 from '@/assets/physical-exam-organ-3.webp'
+import organ4 from '@/assets/physical-exam-organ-4.webp'
+import organ5 from '@/assets/physical-exam-organ-5.webp'
+import organs from '@/assets/physical-exam-organs.webp'
+import title from '@/assets/physical-exam-title.webp'
+import tipBubble from '@/assets/physical-exam-tip-bubble.webp'
+import warning from '@/assets/physical-exam-warning.webp'
 
 const route = useRoute()
 const router = useRouter()
@@ -163,7 +163,7 @@ function endMagnifierDrag(event) {
 
 <template>
   <section class="scene-page physical-exam-page" aria-label="体检页面">
-    <img class="scene-image physical-exam-image" src="@/assets/physical-exam-bg.png" alt="体检页面背景" />
+    <img class="scene-image physical-exam-image" src="@/assets/physical-exam-bg.webp" alt="体检页面背景" />
     <template v-for="layer in layers" :key="layer">
       <img
         v-if="layer !== tipBubble || !showOrgans"

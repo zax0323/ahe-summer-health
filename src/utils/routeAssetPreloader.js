@@ -1,4 +1,4 @@
-const assetModules = import.meta.glob('../assets/**/*.{png,jpg,jpeg,gif,webp,mov,mp4}', {
+const assetModules = import.meta.glob('../assets/**/*.{webp,jpg,jpeg,gif,mov,mp4}', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -127,6 +127,20 @@ const addPreloadHint = (url, asType) => {
   document.head.appendChild(link)
 }
 
+const addPrefetchHint = (url) => {
+  const selector = `link[data-route-prefetch="${CSS.escape(url)}"]`
+
+  if (document.head.querySelector(selector)) {
+    return
+  }
+
+  const link = document.createElement('link')
+  link.rel = 'prefetch'
+  link.href = url
+  link.dataset.routePrefetch = url
+  document.head.appendChild(link)
+}
+
 const preloadImage = (url) => {
   const image = new Image()
   image.decoding = 'async'
@@ -182,6 +196,14 @@ const preloadAsset = (url) => {
     })
 }
 
+const prefetchAsset = (url) => {
+  if (loadedAssets.has(url) || pendingAssets.has(url)) {
+    return
+  }
+
+  addPrefetchHint(url)
+}
+
 const getAssetsForRoute = (routeName) => {
   const needles = routeAssetGroups[routeName] ?? []
 
@@ -200,6 +222,12 @@ const warmRoutes = (routeNames) => {
   })
 }
 
+const prefetchRoutes = (routeNames) => {
+  routeNames.forEach((routeName) => {
+    getAssetsForRoute(routeName).forEach(prefetchAsset)
+  })
+}
+
 export const installRouteAssetPreloader = (router) => {
   if (installedRouter === router || typeof window === 'undefined') {
     return
@@ -215,7 +243,16 @@ export const installRouteAssetPreloader = (router) => {
     const relatedRoutes = nextRouteGroups[to.name] ?? []
 
     scheduleIdle(() => {
-      warmRoutes([to.name, ...relatedRoutes])
+      if (navigator.connection?.saveData) {
+        return
+      }
+
+      const effectiveType = navigator.connection?.effectiveType
+      if (effectiveType === 'slow-2g' || effectiveType === '2g') {
+        return
+      }
+
+      prefetchRoutes(relatedRoutes)
     })
   })
 }

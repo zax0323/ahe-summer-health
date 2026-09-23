@@ -1,19 +1,19 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import defaultOverlay from '@/assets/food-intro-overlay.png'
-import burgerIcon from '@/assets/food-intro-burger-icon.png'
-import burgerTitle from '@/assets/food-intro-burger-title.png'
-import burgerTip from '@/assets/food-intro-burger-tip.png'
-import burgerInfo from '@/assets/food-intro-burger-info.png'
-import beefNoodlesIcon from '@/assets/food-intro-beef-noodles-icon.png'
-import beefNoodlesTitle from '@/assets/food-intro-beef-noodles-title.png'
-import beefNoodlesTip from '@/assets/food-intro-beef-noodles-tip.png'
-import beefNoodlesInfo from '@/assets/food-intro-beef-noodles-info.png'
-import sushiIcon from '@/assets/food-intro-sushi-icon.png'
-import sushiTitle from '@/assets/food-intro-sushi-title.png'
-import sushiTip from '@/assets/food-intro-sushi-tip.png'
-import sushiInfo from '@/assets/food-intro-sushi-info.png'
+import defaultOverlay from '@/assets/food-intro-overlay.webp'
+import burgerIcon from '@/assets/food-intro-burger-icon.webp'
+import burgerTitle from '@/assets/food-intro-burger-title.webp'
+import burgerTip from '@/assets/food-intro-burger-tip.webp'
+import burgerInfo from '@/assets/food-intro-burger-info.webp'
+import beefNoodlesIcon from '@/assets/food-intro-beef-noodles-icon.webp'
+import beefNoodlesTitle from '@/assets/food-intro-beef-noodles-title.webp'
+import beefNoodlesTip from '@/assets/food-intro-beef-noodles-tip.webp'
+import beefNoodlesInfo from '@/assets/food-intro-beef-noodles-info.webp'
+import sushiIcon from '@/assets/food-intro-sushi-icon.webp'
+import sushiTitle from '@/assets/food-intro-sushi-title.webp'
+import sushiTip from '@/assets/food-intro-sushi-tip.webp'
+import sushiInfo from '@/assets/food-intro-sushi-info.webp'
 
 const route = useRoute()
 
@@ -53,7 +53,7 @@ const foodIntroLayers = computed(() => foodIntroLayerMap[route.query.food] ?? de
 
 <template>
   <section class="scene-page food-intro-page" aria-label="food intro scene">
-    <img class="scene-image" src="@/assets/food-intro-bg.png" alt="food intro background" />
+    <img class="scene-image" src="@/assets/food-intro-bg.webp" alt="food intro background" />
     <img
       v-for="layer in foodIntroLayers"
       :key="layer.alt"

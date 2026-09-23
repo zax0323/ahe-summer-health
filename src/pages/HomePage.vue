@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import achievementCheckinSuccess from '@/assets/achievement-checkin-success.png'
-import achievementSignIn from '@/assets/achievement-sign-in.png'
+import achievementCheckinSuccess from '@/assets/achievement-checkin-success.webp'
+import achievementSignIn from '@/assets/achievement-sign-in.webp'
 import { currentCycleDay, maxCycleDays, resetMealStatus } from '@/data/mealStatus'
 
 const router = useRouter()

@@ -2,15 +2,15 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-import bg from '@/assets/physical-exam-detail/bg.png'
-import back from '@/assets/physical-exam-detail/back.png'
-import title from '@/assets/physical-exam-detail/title.png'
-import tip from '@/assets/physical-exam-detail/tip.png'
-import fei from '@/assets/physical-exam-detail/fei.png'
-import gan from '@/assets/physical-exam-detail/gan.png'
-import pi from '@/assets/physical-exam-detail/pi.png'
-import shen from '@/assets/physical-exam-detail/shen.png'
-import xin from '@/assets/physical-exam-detail/xin.png'
+import bg from '@/assets/physical-exam-detail/bg.webp'
+import back from '@/assets/physical-exam-detail/back.webp'
+import title from '@/assets/physical-exam-detail/title.webp'
+import tip from '@/assets/physical-exam-detail/tip.webp'
+import fei from '@/assets/physical-exam-detail/fei.webp'
+import gan from '@/assets/physical-exam-detail/gan.webp'
+import pi from '@/assets/physical-exam-detail/pi.webp'
+import shen from '@/assets/physical-exam-detail/shen.webp'
+import xin from '@/assets/physical-exam-detail/xin.webp'
 
 const route = useRoute()
 const router = useRouter()

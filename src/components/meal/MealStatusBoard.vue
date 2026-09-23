@@ -24,8 +24,8 @@
 <script setup>
 import { computed } from 'vue'
 import { currentMealStatus, mealStatusRows, maxProgressLevel, minProgressLevel } from '@/data/mealStatus'
-import statusFrame from '@/assets/meal-status/status-frame.png'
-import statusProgress100 from '@/assets/meal-status/status-progress-100.png'
+import statusFrame from '@/assets/meal-status/status-frame.webp'
+import statusProgress100 from '@/assets/meal-status/status-progress-100.webp'
 
 const sceneWidth = 1440
 const sceneHeight = 3072

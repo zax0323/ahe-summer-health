@@ -1,4 +1,4 @@
-const foodAssets = import.meta.glob('../assets/morning-meal-items/*.{png,PNG}', {
+const foodAssets = import.meta.glob('../assets/morning-meal-items/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -26,64 +26,64 @@ export const mealFoodActions = [
 
 export const mealFoodGroups = {
   staple: [
-    createFood('rice', '米饭', 'rice.png', {
+    createFood('rice', '米饭', 'rice.webp', {
       appetite: 0,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('bread', '面包', 'bread.png'),
-    createFood('sushi', '寿司', 'sushi.png', {
+    createFood('bread', '面包', 'bread.webp'),
+    createFood('sushi', '寿司', 'sushi.webp', {
       appetite: 0,
       energy: 1,
       hydration: 0,
       mood: 1,
       sleep: 0,
     }),
-    createFood('burger', '汉堡', 'burger.png', {
+    createFood('burger', '汉堡', 'burger.webp', {
       appetite: -1,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('subway', '赛百味', 'subway.png', {
+    createFood('subway', '赛百味', 'subway.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('pasta', '意面', 'pasta.png', {
+    createFood('pasta', '意面', 'pasta.webp', {
       appetite: 0,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('oil-noodles', '油泼面', 'oil-noodles.png', {
+    createFood('oil-noodles', '油泼面', 'oil-noodles.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('zhushi10nanguaxiaomizhou', '南瓜小米粥', 'zhushi10nanguaxiaomizhou.png', {
+    createFood('zhushi10nanguaxiaomizhou', '南瓜小米粥', 'zhushi10nanguaxiaomizhou.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('zhushi11wuguzaliangfan', '五谷杂粮饭', 'zhushi11wuguzaliangfan.png', {
+    createFood('zhushi11wuguzaliangfan', '五谷杂粮饭', 'zhushi11wuguzaliangfan.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('zhushi12shanyaoxiaomizhou', '山药小米粥', 'zhushi12shanyaoxiaomizhou.png', {
+    createFood('zhushi12shanyaoxiaomizhou', '山药小米粥', 'zhushi12shanyaoxiaomizhou.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
@@ -92,77 +92,77 @@ export const mealFoodGroups = {
     }),
   ],
   vegetable: [
-    createFood('braised-pork', '东坡肉', 'braised-pork.png', {
+    createFood('braised-pork', '东坡肉', 'braised-pork.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('steamed-fish', '清蒸鲈鱼', 'steamed-fish.png', {
+    createFood('steamed-fish', '清蒸鲈鱼', 'steamed-fish.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('fried-chicken', '炸鸡', 'fried-chicken.png', {
+    createFood('fried-chicken', '炸鸡', 'fried-chicken.webp', {
       appetite: -1,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('barbecue', '烧烤', 'barbecue.png', {
+    createFood('barbecue', '烧烤', 'barbecue.webp', {
       appetite: -1,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('vegetables', '蔬菜', 'vegetables.png', {
+    createFood('vegetables', '蔬菜', 'vegetables.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('egg', '鸡蛋', 'egg.png', {
+    createFood('egg', '鸡蛋', 'egg.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('caiyao08xihongshichaojidan', '西红柿炒鸡蛋', 'caiyao08xihongshichaojidan.png', {
+    createFood('caiyao08xihongshichaojidan', '西红柿炒鸡蛋', 'caiyao08xihongshichaojidan.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('caiyao09shanyaochaomuer', '山药炒木耳', 'caiyao09shanyaochaomuer.png', {
+    createFood('caiyao09shanyaochaomuer', '山药炒木耳', 'caiyao09shanyaochaomuer.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('caiyao10zhengnangua', '蒸南瓜', 'caiyao10zhengnangua.png', {
+    createFood('caiyao10zhengnangua', '蒸南瓜', 'caiyao10zhengnangua.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('caiyao11qingchaoxilanhua', '清炒西兰花', 'caiyao11qingchaoxilanhua.png', {
+    createFood('caiyao11qingchaoxilanhua', '清炒西兰花', 'caiyao11qingchaoxilanhua.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('caiyao12gongbaojiding', '宫保鸡丁', 'caiyao12gongbaojiding.png', {
+    createFood('caiyao12gongbaojiding', '宫保鸡丁', 'caiyao12gongbaojiding.webp', {
       appetite: 0,
       energy: 1,
       hydration: -1,
@@ -171,49 +171,49 @@ export const mealFoodGroups = {
     }),
   ],
   soup: [
-    createFood('udon', '乌冬面', 'udon.png', {
+    createFood('udon', '乌冬面', 'udon.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('beef-noodles', '红烧牛肉面', 'beef-noodles.png', {
+    createFood('beef-noodles', '红烧牛肉面', 'beef-noodles.webp', {
       appetite: 0,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng01dongguaxiarentang', '冬瓜虾仁汤', 'tanggeng01dongguaxiarentang.png', {
+    createFood('tanggeng01dongguaxiarentang', '冬瓜虾仁汤', 'tanggeng01dongguaxiarentang.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng02bocaidoufutang', '菠菜豆腐汤', 'tanggeng02bocaidoufutang.png', {
+    createFood('tanggeng02bocaidoufutang', '菠菜豆腐汤', 'tanggeng02bocaidoufutang.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng03zicaidanhuatang', '紫菜蛋花汤', 'tanggeng03zicaidanhuatang.png', {
+    createFood('tanggeng03zicaidanhuatang', '紫菜蛋花汤', 'tanggeng03zicaidanhuatang.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng04fanqiejungutang', '番茄菌菇汤', 'tanggeng04fanqiejungutang.png', {
+    createFood('tanggeng04fanqiejungutang', '番茄菌菇汤', 'tanggeng04fanqiejungutang.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng05siguajidantang', '丝瓜鸡蛋汤', 'tanggeng05siguajidantang.png', {
+    createFood('tanggeng05siguajidantang', '丝瓜鸡蛋汤', 'tanggeng05siguajidantang.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
@@ -223,7 +223,7 @@ export const mealFoodGroups = {
     createFood(
       'tanggeng06yumihuluobopaigutang',
       '玉米胡萝卜排骨汤',
-      'tanggeng06yumihuluobopaigutang.png',
+      'tanggeng06yumihuluobopaigutang.webp',
       {
         appetite: 0,
         energy: 1,
@@ -232,14 +232,14 @@ export const mealFoodGroups = {
         sleep: 0,
       },
     ),
-    createFood('tanggeng07lianoupaigutang', '莲藕排骨汤', 'tanggeng07lianoupaigutang.png', {
+    createFood('tanggeng07lianoupaigutang', '莲藕排骨汤', 'tanggeng07lianoupaigutang.webp', {
       appetite: 0,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('tanggeng08shanyaopaigutang', '山药排骨汤', 'tanggeng08shanyaopaigutang.png', {
+    createFood('tanggeng08shanyaopaigutang', '山药排骨汤', 'tanggeng08shanyaopaigutang.webp', {
       appetite: 0,
       energy: 1,
       hydration: 1,
@@ -249,7 +249,7 @@ export const mealFoodGroups = {
     createFood(
       'tanggeng09lvdoubaihelianzigeng',
       '绿豆百合莲子羹',
-      'tanggeng09lvdoubaihelianzigeng.png',
+      'tanggeng09lvdoubaihelianzigeng.webp',
       {
         appetite: 1,
         energy: 0,
@@ -261,7 +261,7 @@ export const mealFoodGroups = {
     createFood(
       'tanggeng10dongguayimilaoyatang',
       '冬瓜薏米老鸭汤',
-      'tanggeng10dongguayimilaoyatang.png',
+      'tanggeng10dongguayimilaoyatang.webp',
       {
         appetite: 0,
         energy: 1,
@@ -273,7 +273,7 @@ export const mealFoodGroups = {
     createFood(
       'tanggeng11xueliyinerlianzigeng',
       '雪梨银耳莲子羹',
-      'tanggeng11xueliyinerlianzigeng.png',
+      'tanggeng11xueliyinerlianzigeng.webp',
       {
         appetite: 1,
         energy: 0,
@@ -282,7 +282,7 @@ export const mealFoodGroups = {
         sleep: 0,
       },
     ),
-    createFood('tanggeng12baihelianzigeng', '百合莲子羹', 'tanggeng12baihelianzigeng.png', {
+    createFood('tanggeng12baihelianzigeng', '百合莲子羹', 'tanggeng12baihelianzigeng.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
@@ -292,7 +292,7 @@ export const mealFoodGroups = {
     createFood(
       'tanggeng13mikangzhimaoufengeng',
       '米糠芝麻藕粉羹',
-      'tanggeng13mikangzhimaoufengeng.png',
+      'tanggeng13mikangzhimaoufengeng.webp',
       {
         appetite: 1,
         energy: 1,
@@ -301,7 +301,7 @@ export const mealFoodGroups = {
         sleep: 0,
       },
     ),
-    createFood('tanggeng14lvdounanguatang', '绿豆南瓜汤', 'tanggeng14lvdounanguatang.png', {
+    createFood('tanggeng14lvdounanguatang', '绿豆南瓜汤', 'tanggeng14lvdounanguatang.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
@@ -310,70 +310,70 @@ export const mealFoodGroups = {
     }),
   ],
   fruit: [
-    createFood('light-meal', '轻食', 'light-meal.png', {
+    createFood('light-meal', '轻食', 'light-meal.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo01xigua', '西瓜', 'shuiguo01xigua.png', {
+    createFood('shuiguo01xigua', '西瓜', 'shuiguo01xigua.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo02caomei', '草莓', 'shuiguo02caomei.png', {
+    createFood('shuiguo02caomei', '草莓', 'shuiguo02caomei.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo03li', '梨', 'shuiguo03li.png', {
+    createFood('shuiguo03li', '梨', 'shuiguo03li.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('shuiguo04tao', '桃', 'shuiguo04tao.png', {
+    createFood('shuiguo04tao', '桃', 'shuiguo04tao.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo05putao', '葡萄', 'shuiguo05putao.png', {
+    createFood('shuiguo05putao', '葡萄', 'shuiguo05putao.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo06pingguo', '苹果', 'shuiguo06pingguo.png', {
+    createFood('shuiguo06pingguo', '苹果', 'shuiguo06pingguo.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('shuiguo07xiangjiao', '香蕉', 'shuiguo07xiangjiao.png', {
+    createFood('shuiguo07xiangjiao', '香蕉', 'shuiguo07xiangjiao.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo08chengzi', '橙子', 'shuiguo08chengzi.png', {
+    createFood('shuiguo08chengzi', '橙子', 'shuiguo08chengzi.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('shuiguo09lanmei', '蓝莓', 'shuiguo09lanmei.png', {
+    createFood('shuiguo09lanmei', '蓝莓', 'shuiguo09lanmei.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
@@ -382,63 +382,63 @@ export const mealFoodGroups = {
     }),
   ],
   dessert: [
-    createFood('cake', '蛋糕', 'cake.png', {
+    createFood('cake', '蛋糕', 'cake.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('ice-cream', '冰淇淋', 'ice-cream.png', {
+    createFood('ice-cream', '冰淇淋', 'ice-cream.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: -1,
     }),
-    createFood('chocolate', '巧克力', 'chocolate.png', {
+    createFood('chocolate', '巧克力', 'chocolate.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: -1,
     }),
-    createFood('dianxin04sudabinggan', '苏打饼干', 'dianxin04sudabinggan.png', {
+    createFood('dianxin04sudabinggan', '苏打饼干', 'dianxin04sudabinggan.webp', {
       appetite: 0,
       energy: 1,
       hydration: -1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('dianxin05yuanweisuannaibei', '原味酸奶杯', 'dianxin05yuanweisuannaibei.png', {
+    createFood('dianxin05yuanweisuannaibei', '原味酸奶杯', 'dianxin05yuanweisuannaibei.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('dianxin06shuiguosuannaibei', '水果酸奶杯', 'dianxin06shuiguosuannaibei.png', {
+    createFood('dianxin06shuiguosuannaibei', '水果酸奶杯', 'dianxin06shuiguosuannaibei.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('dianxin07heizhimahu', '黑芝麻糊', 'dianxin07heizhimahu.png', {
+    createFood('dianxin07heizhimahu', '黑芝麻糊', 'dianxin07heizhimahu.webp', {
       appetite: 1,
       energy: 1,
       hydration: 0,
       mood: 0,
       sleep: 0,
     }),
-    createFood('dianxin08lvdougao', '绿豆糕', 'dianxin08lvdougao.png', {
+    createFood('dianxin08lvdougao', '绿豆糕', 'dianxin08lvdougao.webp', {
       appetite: 0,
       energy: 1,
       hydration: -1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('dianxin09shanyaohongzaogao', '山药红枣糕', 'dianxin09shanyaohongzaogao.png', {
+    createFood('dianxin09shanyaohongzaogao', '山药红枣糕', 'dianxin09shanyaohongzaogao.webp', {
       appetite: 1,
       energy: 1,
       hydration: -1,
@@ -447,70 +447,70 @@ export const mealFoodGroups = {
     }),
   ],
   drink: [
-    createFood('cola', '可乐', 'cola.png', {
+    createFood('cola', '可乐', 'cola.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: -1,
     }),
-    createFood('yinpin02naicha', '奶茶', 'yinpin02naicha.PNG', {
+    createFood('yinpin02naicha', '奶茶', 'yinpin02naicha.webp', {
       appetite: 0,
       energy: 0,
       hydration: -1,
       mood: 1,
       sleep: -1,
     }),
-    createFood('yinpin03niunai', '牛奶', 'yinpin03niunai.PNG', {
+    createFood('yinpin03niunai', '牛奶', 'yinpin03niunai.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('yinpin04changwenqingshui', '常温清水', 'yinpin04changwenqingshui.png', {
+    createFood('yinpin04changwenqingshui', '常温清水', 'yinpin04changwenqingshui.webp', {
       appetite: 0,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('yinpin05bingshui', '冰水', 'yinpin05bingshui.png', {
+    createFood('yinpin05bingshui', '冰水', 'yinpin05bingshui.webp', {
       appetite: 0,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: -1,
     }),
-    createFood('yinpin06wutangdoujiang', '无糖豆浆', 'yinpin06wutangdoujiang.png', {
+    createFood('yinpin06wutangdoujiang', '无糖豆浆', 'yinpin06wutangdoujiang.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('yinpin07xianzhachengzhi', '鲜榨橙汁', 'yinpin07xianzhachengzhi.png', {
+    createFood('yinpin07xianzhachengzhi', '鲜榨橙汁', 'yinpin07xianzhachengzhi.webp', {
       appetite: 1,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('yinpin08lvdouyin', '绿豆饮', 'yinpin08lvdouyin.png', {
+    createFood('yinpin08lvdouyin', '绿豆饮', 'yinpin08lvdouyin.webp', {
       appetite: 0,
       energy: 0,
       hydration: 1,
       mood: 0,
       sleep: 0,
     }),
-    createFood('yinpin09suanmeitang', '酸梅汤', 'yinpin09suanmeitang.png', {
+    createFood('yinpin09suanmeitang', '酸梅汤', 'yinpin09suanmeitang.webp', {
       appetite: 0,
       energy: 0,
       hydration: 1,
       mood: 1,
       sleep: 0,
     }),
-    createFood('yinpin10wugudouyin', '五谷豆饮', 'yinpin10wugudouyin.png', {
+    createFood('yinpin10wugudouyin', '五谷豆饮', 'yinpin10wugudouyin.webp', {
       appetite: 1,
       energy: 1,
       hydration: 1,

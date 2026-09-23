@@ -9,7 +9,7 @@ import {
   normalizeBedtimeChoiceId,
   setSavedBedtimeChoice,
 } from '@/data/bedtimeResult'
-import bedtimeChoiceScene from '@/assets/bedtime-choice/bedtime-choice-overall.png'
+import bedtimeChoiceScene from '@/assets/bedtime-choice/bedtime-choice-overall.webp'
 
 const router = useRouter()
 

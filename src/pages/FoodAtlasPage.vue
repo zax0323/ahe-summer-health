@@ -1,16 +1,16 @@
 <script setup>
-import atlasBack from '@/assets/food-atlas-back.png'
-import atlasBeefNoodles from '@/assets/food-atlas-beef-noodles.png'
-import atlasRice from '@/assets/food-atlas-rice.png'
-import atlasBread from '@/assets/food-atlas-bread.png'
-import atlasBurger from '@/assets/food-atlas-burger.png'
-import atlasTitle from '@/assets/food-atlas-title.png'
-import atlasSandwich from '@/assets/food-atlas-sandwich.png'
-import atlasHint from '@/assets/food-atlas-hint.png'
-import atlasFilters from '@/assets/food-atlas-filters.png'
-import atlasPasta from '@/assets/food-atlas-pasta.png'
-import atlasSushi from '@/assets/food-atlas-sushi.png'
-import atlasUdon from '@/assets/food-atlas-udon.png'
+import atlasBack from '@/assets/food-atlas-back.webp'
+import atlasBeefNoodles from '@/assets/food-atlas-beef-noodles.webp'
+import atlasRice from '@/assets/food-atlas-rice.webp'
+import atlasBread from '@/assets/food-atlas-bread.webp'
+import atlasBurger from '@/assets/food-atlas-burger.webp'
+import atlasTitle from '@/assets/food-atlas-title.webp'
+import atlasSandwich from '@/assets/food-atlas-sandwich.webp'
+import atlasHint from '@/assets/food-atlas-hint.webp'
+import atlasFilters from '@/assets/food-atlas-filters.webp'
+import atlasPasta from '@/assets/food-atlas-pasta.webp'
+import atlasSushi from '@/assets/food-atlas-sushi.webp'
+import atlasUdon from '@/assets/food-atlas-udon.webp'
 
 const foodAtlasLayers = [
   { src: atlasBack, alt: 'food atlas back button' },
@@ -53,7 +53,7 @@ const foodAtlasActions = [
 
 <template>
   <section class="scene-page food-atlas-page" aria-label="food atlas scene">
-    <img class="scene-image" src="@/assets/food-atlas-bg.png" alt="food atlas" />
+    <img class="scene-image" src="@/assets/food-atlas-bg.webp" alt="food atlas" />
     <img
       v-for="layer in foodAtlasLayers"
       :key="layer.alt"

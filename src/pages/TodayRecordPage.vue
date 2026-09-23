@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import todayRecordBg from '@/assets/today-record/bg.png'
-import todayRecordBack from '@/assets/today-record/back.png'
-import todayRecordComplete from '@/assets/today-record/complete.png'
-import todayRecordWeekDay1 from '@/assets/today-record/today-record-day-1.png'
-import todayRecordWeekDay2 from '@/assets/today-record/today-record-day-2.png'
+import todayRecordBg from '@/assets/today-record/bg.webp'
+import todayRecordBack from '@/assets/today-record/back.webp'
+import todayRecordComplete from '@/assets/today-record/complete.webp'
+import todayRecordWeekDay1 from '@/assets/today-record/today-record-day-1.webp'
+import todayRecordWeekDay2 from '@/assets/today-record/today-record-day-2.webp'
 import { getTodayRecordScore, todayRecordStatusAssets } from '@/data/todayRecord'
 import { currentCycleDay, maxCycleDays } from '@/data/mealStatus'
 

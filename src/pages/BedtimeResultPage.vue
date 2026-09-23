@@ -6,10 +6,10 @@ import {
   getSavedBedtimeChoice,
   resolveBedtimeResult,
 } from '@/data/bedtimeResult'
-import bedtimeResultBg from '@/assets/bedtime-result/bg.png'
-import bedtimeResultTitle from '@/assets/bedtime-result/title.png'
-import bedtimeResultBack from '@/assets/bedtime-result/back.png'
-import bedtimeResultRecord from '@/assets/bedtime-result/record.png'
+import bedtimeResultBg from '@/assets/bedtime-result/bg.webp'
+import bedtimeResultTitle from '@/assets/bedtime-result/title.webp'
+import bedtimeResultBack from '@/assets/bedtime-result/back.webp'
+import bedtimeResultRecord from '@/assets/bedtime-result/record.webp'
 
 const router = useRouter()
 

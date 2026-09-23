@@ -1,6 +1,6 @@
-import bedtimeResultGood from '@/assets/bedtime-result/status-1-good.png'
-import bedtimeResultNormal from '@/assets/bedtime-result/status-2-normal.png'
-import bedtimeResultPoor from '@/assets/bedtime-result/status-3-poor.png'
+import bedtimeResultGood from '@/assets/bedtime-result/status-1-good.webp'
+import bedtimeResultNormal from '@/assets/bedtime-result/status-2-normal.webp'
+import bedtimeResultPoor from '@/assets/bedtime-result/status-3-poor.webp'
 
 const bedtimeChoiceStorageKey = 'vue-basic-starter:bedtime-choice'
 const bedtimeHistoryStorageKey = 'vue-basic-starter:bedtime-result-history'

@@ -1,8 +1,8 @@
 import { currentMealStatus, mealStatusRows } from '@/data/mealStatus'
 import { getSavedBedtimeChoice, resolveBedtimeResult } from '@/data/bedtimeResult'
-import todayRecordStatusGood from '@/assets/today-record/status-1-good.png'
-import todayRecordStatusMid from '@/assets/today-record/status-2-mid.png'
-import todayRecordStatusBad from '@/assets/today-record/status-3-bad.png'
+import todayRecordStatusGood from '@/assets/today-record/status-1-good.webp'
+import todayRecordStatusMid from '@/assets/today-record/status-2-mid.webp'
+import todayRecordStatusBad from '@/assets/today-record/status-3-bad.webp'
 
 export const todayRecordStatusAssets = {
   1: todayRecordStatusGood,

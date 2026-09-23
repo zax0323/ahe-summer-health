@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import gan from '@/assets/wuse-yuanhuan-detail/gan.png'
-import xin from '@/assets/wuse-yuanhuan-detail/xin.png'
-import pi from '@/assets/wuse-yuanhuan-detail/pi.png'
-import shen from '@/assets/wuse-yuanhuan-detail/shen.png'
-import fei from '@/assets/wuse-yuanhuan-detail/fei.png'
+import gan from '@/assets/wuse-yuanhuan-detail/gan.webp'
+import xin from '@/assets/wuse-yuanhuan-detail/xin.webp'
+import pi from '@/assets/wuse-yuanhuan-detail/pi.webp'
+import shen from '@/assets/wuse-yuanhuan-detail/shen.webp'
+import fei from '@/assets/wuse-yuanhuan-detail/fei.webp'
 
 const route = useRoute()
 const detailPages = {

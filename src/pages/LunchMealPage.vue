@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { applyStatusEffects, currentMealStatus, mealStatusRows } from '@/data/mealStatus'
@@ -93,32 +93,32 @@ const finishMealSelection = () => {
 
 <template>
   <section class="scene-page lunch-meal-page" aria-label="lunch meal scene">
-    <img class="scene-image" src="@/assets/lunch-meal-bg.png" alt="lunch meal background" />
+    <img class="scene-image" src="@/assets/lunch-meal-bg.webp" alt="lunch meal background" />
     <img
       class="morning-overlay morning-meal-time"
-      src="@/assets/lunch-meal-time.png"
+      src="@/assets/lunch-meal-time.webp"
       alt="lunch meal time"
     />
     <img
       class="morning-overlay morning-meal-settings"
-      src="@/assets/lunch-meal-settings.png"
+      src="@/assets/lunch-meal-settings.webp"
       alt="lunch meal settings"
     />
     <img
       class="morning-overlay morning-meal-character"
-      src="@/assets/lunch-meal-character.png"
+      src="@/assets/lunch-meal-character.webp"
       alt="lunch meal character"
     />
     <MealStatusBoard />
     <template v-if="!isSelectingMealFoods">
       <img
         class="morning-overlay morning-meal-backdrop"
-        src="@/assets/morning-meal-backdrop.png"
+        src="@/assets/morning-meal-backdrop.webp"
         alt="morning meal backdrop"
       />
       <img
         class="morning-overlay morning-meal-food-board"
-        src="@/assets/morning-meal-food-board-morning.png"
+        src="@/assets/morning-meal-food-board-morning.webp"
         alt="morning meal food board"
       />
       <button
@@ -134,19 +134,19 @@ const finishMealSelection = () => {
     <template v-else>
       <img
         class="morning-overlay morning-meal-backdrop"
-        src="@/assets/morning-meal-backdrop.png"
+        src="@/assets/morning-meal-backdrop.webp"
         alt="morning meal backdrop"
       />
       <img
         class="morning-overlay morning-meal-panel morning-meal-panel-1"
         :class="{ 'is-dragging': isDraggingMealFoodSlider }"
-        src="@/assets/morning-meal-panel-1.png"
+        src="@/assets/morning-meal-panel-1.webp"
         :style="mealFoodSliderThumbStyle"
         alt="morning meal panel 1"
       />
       <img
         class="morning-overlay morning-meal-panel morning-meal-panel-2"
-        src="@/assets/morning-meal-panel-2.png"
+        src="@/assets/morning-meal-panel-2.webp"
         alt="morning meal panel 2"
       />
       <button
@@ -158,18 +158,18 @@ const finishMealSelection = () => {
       >
         <img
           class="morning-meal-panel-image"
-          src="@/assets/morning-meal-panel-3.png"
+          src="@/assets/morning-meal-panel-3.webp"
           alt="morning meal panel 3"
         />
       </button>
       <img
         class="morning-overlay morning-meal-panel morning-meal-panel-4"
-        src="@/assets/morning-meal-panel-4.png"
+        src="@/assets/morning-meal-panel-4.webp"
         alt="morning meal panel 4"
       />
       <img
         class="morning-overlay morning-meal-panel morning-meal-panel-5"
-        src="@/assets/morning-meal-panel-5.png"
+        src="@/assets/morning-meal-panel-5.webp"
         alt="morning meal panel 5"
       />
       <div class="morning-meal-food-slot-grid" aria-label="selected foods">

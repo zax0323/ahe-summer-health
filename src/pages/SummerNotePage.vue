@@ -1,10 +1,10 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import summerNote01 from '@/assets/summer-note-01.png'
-import summerNote02 from '@/assets/summer-note-02.png'
-import summerNote03 from '@/assets/summer-note-03.png'
-import summerNoteOverlay from '@/assets/summer-note-overlay.png'
+import summerNote01 from '@/assets/summer-note-01.webp'
+import summerNote02 from '@/assets/summer-note-02.webp'
+import summerNote03 from '@/assets/summer-note-03.webp'
+import summerNoteOverlay from '@/assets/summer-note-overlay.webp'
 
 const router = useRouter()
 

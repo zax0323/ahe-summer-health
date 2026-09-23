@@ -3,7 +3,7 @@
     <template v-if="isVideoEnded">
       <img
         class="scene-image morning-observation-image"
-        src="@/assets/morning-observation.png"
+        src="@/assets/morning-observation.webp"
         alt="晨间观察页面"
       />
       <RouterLink class="morning-back-action" to="/" aria-label="返回首页"></RouterLink>

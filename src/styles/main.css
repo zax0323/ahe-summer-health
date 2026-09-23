@@ -263,7 +263,7 @@ a {
 
 .home-page::before {
   content: '';
-  background: url('@/assets/home-main-bg.png') center center / contain no-repeat;
+  background: url('@/assets/home-main-bg.webp') center center / contain no-repeat;
 }
 .home-action {
   position: absolute;

@@ -1,15 +1,15 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import bg from '@/assets/wuse-zhouji/bg.png'
-import title from '@/assets/wuse-zhouji/title.png'
-import detail from '@/assets/wuse-zhouji/detail.png'
-import back from '@/assets/wuse-zhouji/back.png'
-import progress from '@/assets/wuse-zhouji/progress.png'
-import day13 from '@/assets/wuse-zhouji/day-1-3.png'
-import day4 from '@/assets/wuse-zhouji/day-4.png'
-import day5 from '@/assets/wuse-zhouji/day-5.png'
-import footer from '@/assets/wuse-zhouji/footer.png'
+import bg from '@/assets/wuse-zhouji/bg.webp'
+import title from '@/assets/wuse-zhouji/title.webp'
+import detail from '@/assets/wuse-zhouji/detail.webp'
+import back from '@/assets/wuse-zhouji/back.webp'
+import progress from '@/assets/wuse-zhouji/progress.webp'
+import day13 from '@/assets/wuse-zhouji/day-1-3.webp'
+import day4 from '@/assets/wuse-zhouji/day-4.webp'
+import day5 from '@/assets/wuse-zhouji/day-5.webp'
+import footer from '@/assets/wuse-zhouji/footer.webp'
 
 const router = useRouter()
 const scrollViewport = ref(null)
